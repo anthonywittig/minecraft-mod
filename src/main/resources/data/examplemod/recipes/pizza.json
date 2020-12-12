@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "X",
+    "X"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "examplemod:pizza",
+    "count": 4
+  }
+}
