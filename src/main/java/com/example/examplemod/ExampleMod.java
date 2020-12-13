@@ -33,10 +33,11 @@ import java.util.stream.Collectors;
 public class ExampleMod
 {
 	private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "examplemod");
+	// https://mcforge.readthedocs.io/en/latest/items/items/
 	private static final Properties PIZZA_PROPS = new Properties()
-			.addToolType(ToolType.AXE, 3)
+			.addToolType(ToolType.AXE, 3) // tool type and harvest level
 			.group(ItemGroup.COMBAT)
-			.maxDamage(10);
+			.maxDamage(10);  // how much damage it can take
 	private static final RegistryObject<Item> PIZZA_REGISTRY = ITEMS.register("pizza", () -> new Pizza(PIZZA_PROPS));
 
     // Directly reference a log4j logger.
