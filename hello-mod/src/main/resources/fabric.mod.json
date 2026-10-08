@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "hellocommand",
+	"version": "${version}",
+	"name": "Hello Command",
+	"description": "Adds a simple /hello command.",
+	"authors": ["Anthony"],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/hellocommand/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.awittig.hellocommand.HelloCommandMod"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
